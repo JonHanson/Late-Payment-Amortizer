@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hansonventures.late_payment_amortizer.Controller">
+   <Text layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenant name"/>
+   <Text layoutX="20.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenant address"/>
+   <Text layoutX="20.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base rent amount"/>
+   <Text layoutX="20.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Late charge amount"/>
+   <Text layoutX="21.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annual interest rate"/>
+   <TextField fx:id="tenantName" layoutX="150.0" layoutY="19.0"/>
+   <TextField fx:id="tenantAddress" layoutX="150.0" layoutY="49.0"/>
+   <TextField fx:id="baseRentAmount" alignment="CENTER_RIGHT" layoutX="204.0" layoutY="110.0" prefHeight="27.0"
+              prefWidth="96.0" text="0.00"/>
+   <TextField fx:id="lateChargeAmount" alignment="CENTER_RIGHT" layoutX="204.0" layoutY="140.0" prefHeight="27.0"
+              prefWidth="96.0" text="0.00"/>
+   <TextField fx:id="annualInterestRate" alignment="CENTER_RIGHT" layoutX="204.0" layoutY="172.0" prefHeight="27.0"
+              prefWidth="96.0" text="0.0"/>
+   <TextField fx:id="term" alignment="CENTER_RIGHT" layoutX="204.0" layoutY="206.0" prefHeight="27.0" prefWidth="96.0"
+              text="0"/>
+   <Text layoutX="21.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Term (months)"/>
+   <TextField fx:id="newPayment" alignment="CENTER_RIGHT" editable="false" layoutX="204.0" layoutY="267.0"
+              prefHeight="27.0" prefWidth="96.0" text="0.00"/>
+   <Text layoutX="21.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New payent"/>
+   <TextArea fx:id="outputArea" editable="false" layoutX="327.0" layoutY="15.0" prefHeight="377.0" prefWidth="268.0"/>
+   <Button fx:id="calculateButton" layoutX="45.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleCalculate"
+           text="Calculate"/>
+   <Button fx:id="printButton" layoutX="221.0" layoutY="323.0" mnemonicParsing="false" onAction="#handlePrint"
+           text="Print"/>
+   <Text layoutX="195.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+   <Text layoutX="195.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+   <Text layoutX="300.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%"/>
+   <Text layoutX="195.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$"/>
+</AnchorPane>
